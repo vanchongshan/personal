@@ -1,444 +1,593 @@
-<!DOCTYPE html><html class="dark" lang="en" style="width: 1280px; height: 6235px; overflow: hidden; position: relative;"><head></head><body class="selection:bg-primary-container selection:text-on-primary-container">```html
+<!DOCTYPE html>
+<html class="dark" lang="en" style="width: 1280px; height: 6235px; overflow: hidden; position: relative;">
+<head>
+  <meta charset="utf-8"> 
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Ether Strategist | Millennium Dreamcore Portfolio</title>
+  
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Manrope:wght@400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "outline": "#9b8d92",
+            "tertiary-container": "#c8c9ca",
+            "surface-container-lowest": "#050d22",
+            "on-surface-variant": "#d2c2c7",
+            "on-background": "#dae2ff",
+            "on-tertiary": "#2e3132",
+            "inverse-on-surface": "#283046",
+            "secondary-fixed": "#cde5ff",
+            "on-primary-fixed": "#2f1221",
+            "on-secondary-fixed-variant": "#294964",
+            "on-primary": "#472636",
+            "on-tertiary-container": "#525456",
+            "secondary-container": "#294964",
+            "tertiary-fixed": "#e1e3e4",
+            "surface-dim": "#0a1228",
+            "on-tertiary-fixed": "#191c1d",
+            "tertiary-fixed-dim": "#c5c7c8",
+            "surface-container-low": "#131b30",
+            "primary-fixed": "#ffd8e7",
+            "on-primary-fixed-variant": "#603c4c",
+            "primary-container": "#edbcd0",
+            "on-secondary-container": "#99b8d8",
+            "surface-container-highest": "#2c344b",
+            "inverse-surface": "#dae2ff",
+            "surface-bright": "#313950",
+            "on-secondary-fixed": "#001d32",
+            "background": "#0a1228",
+            "surface-container-high": "#212940",
+            "primary": "#ffdce9",
+            "on-error-container": "#ffdad6",
+            "on-surface": "#dae2ff",
+            "on-primary-container": "#6f495a",
+            "on-error": "#690005",
+            "primary-fixed-dim": "#eab9cd",
+            "surface-variant": "#2c344b",
+            "on-tertiary-fixed-variant": "#454748",
+            "error": "#ffb4ab",
+            "secondary-fixed-dim": "#aacaea",
+            "inverse-primary": "#7a5364",
+            "surface": "#0a1228",
+            "tertiary": "#e4e5e6",
+            "surface-container": "#171f35",
+            "secondary": "#aacaea",
+            "on-secondary": "#0f334d",
+            "surface-tint": "#eab9cd",
+            "error-container": "#93000a",
+            "outline-variant": "#4f4448"
+          },
+          spacing: {
+            "container-padding": "40px",
+            "gutter": "24px",
+            "unit": "8px",
+            "margin-safe": "32px"
+          },
+          fontFamily: {
+            "body-lg": ["Manrope"],
+            "headline-sm": ["Playfair Display"],
+            "body-md": ["Manrope"],
+            "headline-md": ["Playfair Display"],
+            "label-sm": ["Space Mono"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"]
+          },
+          fontSize: {
+            "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+            "headline-sm": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+            "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+            "headline-md": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+            "label-sm": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["32px", { "lineHeight": "1.1", "fontWeight": "700" }],
+            "headline-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+          }
+        },
+      },
+    }
+  </script>
 
-<meta charset="utf-8"> 
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Ether Strategist | Millennium Dreamcore Portfolio</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Manrope:wght@400;600&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "outline": "#9b8d92",
-                        "tertiary-container": "#c8c9ca",
-                        "surface-container-lowest": "#050d22",
-                        "on-surface-variant": "#d2c2c7",
-                        "on-background": "#dae2ff",
-                        "on-tertiary": "#2e3132",
-                        "inverse-on-surface": "#283046",
-                        "secondary-fixed": "#cde5ff",
-                        "on-primary-fixed": "#2f1221",
-                        "on-secondary-fixed-variant": "#294964",
-                        "on-primary": "#472636",
-                        "on-tertiary-container": "#525456",
-                        "secondary-container": "#294964",
-                        "tertiary-fixed": "#e1e3e4",
-                        "surface-dim": "#0a1228",
-                        "on-tertiary-fixed": "#191c1d",
-                        "tertiary-fixed-dim": "#c5c7c8",
-                        "surface-container-low": "#131b30",
-                        "primary-fixed": "#ffd8e7",
-                        "on-primary-fixed-variant": "#603c4c",
-                        "primary-container": "#edbcd0",
-                        "on-secondary-container": "#99b8d8",
-                        "surface-container-highest": "#2c344b",
-                        "inverse-surface": "#dae2ff",
-                        "surface-bright": "#313950",
-                        "on-secondary-fixed": "#001d32",
-                        "background": "#0a1228",
-                        "surface-container-high": "#212940",
-                        "primary": "#ffdce9",
-                        "on-error-container": "#ffdad6",
-                        "on-surface": "#dae2ff",
-                        "on-primary-container": "#6f495a",
-                        "on-error": "#690005",
-                        "primary-fixed-dim": "#eab9cd",
-                        "surface-variant": "#2c344b",
-                        "on-tertiary-fixed-variant": "#454748",
-                        "error": "#ffb4ab",
-                        "secondary-fixed-dim": "#aacaea",
-                        "inverse-primary": "#7a5364",
-                        "surface": "#0a1228",
-                        "tertiary": "#e4e5e6",
-                        "surface-container": "#171f35",
-                        "secondary": "#aacaea",
-                        "on-secondary": "#0f334d",
-                        "surface-tint": "#eab9cd",
-                        "error-container": "#93000a",
-                        "outline-variant": "#4f4448"
-                    },
-                    spacing: {
-                        "container-padding": "40px",
-                        "gutter": "24px",
-                        "unit": "8px",
-                        "margin-safe": "32px"
-                    },
-                    fontFamily: {
-                        "body-lg": ["Manrope"],
-                        "headline-sm": ["Playfair Display"],
-                        "body-md": ["Manrope"],
-                        "headline-md": ["Playfair Display"],
-                        "label-sm": ["Space Mono"],
-                        "headline-lg-mobile": ["Playfair Display"],
-                        "headline-lg": ["Playfair Display"]
-                    },
-                    fontSize: {
-                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "headline-sm": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
-                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "headline-md": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
-                        "label-sm": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "400" }],
-                        "headline-lg-mobile": ["32px", { "lineHeight": "1.1", "fontWeight": "700" }],
-                        "headline-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }]
-                    }
-                },
-            },
-        }
-    </script>
-<style>
-        body {
-            background-color: #0a1228;
-            color: #dae2ff;
-            overflow-x: hidden;
-            font-family: 'Manrope', sans-serif;
-        }
+  <style>
+    body {
+      background-color: #0a1228;
+      color: #dae2ff;
+      overflow-x: hidden;
+      font-family: 'Manrope', sans-serif;
+    }
 
-        .grain-overlay {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: url("https://grainy-gradients.vercel.app/noise.svg");
-            opacity: 0.04;
-            pointer-events: none;
-            z-index: 9999;
-        }
+    .grain-overlay {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: url("https://grainy-gradients.vercel.app/noise.svg");
+      opacity: 0.04;
+      pointer-events: none;
+      z-index: 9999;
+    }
 
-        .glass-panel {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 0 20px rgba(167, 199, 231, 0.1);
-        }
+    .glass-panel {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 20px rgba(167, 199, 231, 0.1);
+    }
 
-        .glow-pink {
-            box-shadow: 0 0 15px rgba(237, 188, 208, 0.4);
-        }
+    .glow-pink {
+      box-shadow: 0 0 15px rgba(237, 188, 208, 0.4);
+    }
 
-        .text-glow {
-            text-shadow: 0 0 10px rgba(255, 220, 233, 0.5);
-        }
+    .text-glow {
+      text-shadow: 0 0 10px rgba(255, 220, 233, 0.5);
+    }
 
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-        }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
 
-        .animate-float {
-            animation: float 6s ease-in-out infinite;
-        }
+    .animate-float {
+      animation: float 6s ease-in-out infinite;
+    }
 
-        .starlight {
-            position: absolute;
-            width: 2px;
-            height: 2px;
-            background: white;
-            border-radius: 50%;
-            filter: blur(1px);
-            box-shadow: 0 0 10px 2px white;
-        }
+    .starlight {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      border-radius: 50%;
+      filter: blur(1px);
+      box-shadow: 0 0 10px 2px white;
+    }
 
-        /* Meteor Shower CSS */
-        .meteor-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 0;
-            overflow: hidden;
-        }
+    /* Meteor Shower CSS */
+    .meteor-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
 
-        .meteor {
-            position: absolute;
-            width: 2px;
-            height: 2px;
-            background: #fff;
-            border-radius: 50%;
-            opacity: 0;
-        }
+    .meteor {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: #fff;
+      border-radius: 50%;
+      opacity: 0;
+    }
 
-        .meteor::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 60px;
-            height: 1px;
-            background: linear-gradient(90deg, #EDBCD0, transparent);
-        }
+    .meteor::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 60px;
+      height: 1px;
+      background: linear-gradient(90deg, #EDBCD0, transparent);
+    }
 
-        @keyframes meteor-travel {
-            0% {
-                opacity: 0;
-                transform: translate(0, 0) rotate(-45deg);
-            }
-            10% {
-                opacity: 1;
-            }
-            90% {
-                opacity: 1;
-            }
-            100% {
-                opacity: 0;
-                transform: translate(-400px, 400px) rotate(-45deg);
-            }
-        }
+    @keyframes meteor-travel {
+      0% {
+        opacity: 0;
+        transform: translate(0, 0) rotate(-45deg);
+      }
+      10% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(-400px, 400px) rotate(-45deg);
+      }
+    }
 
-        @media (prefers-reduced-motion: reduce) {
-            .meteor, .animate-float, .ticker-scroll, .starlight {
-                animation: none !important;
-            }
-        }
+    @media (prefers-reduced-motion: reduce) {
+      .meteor, .animate-float, .ticker-scroll, .starlight {
+        animation: none !important;
+      }
+    }
 
-        .ticker-scroll {
-            display: flex;
-            width: max-content;
-            animation: ticker 30s linear infinite;
-        }
+    .ticker-scroll {
+      display: flex;
+      width: max-content;
+      animation: ticker 30s linear infinite;
+    }
 
-        @keyframes ticker {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
+    @keyframes ticker {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
 
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    
+    .radar-shape {
+      clip-path: polygon(50% 10%, 90% 40%, 75% 90%, 25% 90%, 10% 40%);
+      background: radial-gradient(circle, rgba(237,188,208,0.3) 0%, rgba(237,188,208,0) 70%);
+    }
+  </style>
+</head>
+
+<body class="selection:bg-primary-container selection:text-on-primary-container">
+  <div class="grain-overlay"></div>
+  
+  <header class="rounded-full mt-6 mx-auto w-[90%] max-w-4xl fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur-lg border border-white/20 shadow-xl flex justify-between items-center px-8 py-3">
+    <div class="font-headline-sm text-primary italic tracking-widest"></div>
+    <nav class="hidden md:flex gap-8">
+      <a class="text-on-surface-variant/80 hover:text-primary transition-colors duration-300 font-label-sm text-label-sm hover:scale-105 transition-transform font-bold border-b-2 border-primary/50 pb-1" href="#home" data-stitch-orig-opacity="0">Portfolio</a>
+      <a class="text-primary font-label-sm text-label-sm hover:scale-105 transition-transform duration-300 text-on-surface-variant/80" href="#home">Home</a>
+      <a class="text-on-surface-variant/80 hover:text-primary transition-colors duration-300 font-label-sm text-label-sm hover:scale-105 transition-transform" href="#ops">Operations</a>
+      <a class="text-on-surface-variant/80 hover:text-primary transition-colors duration-300 font-label-sm text-label-sm hover:scale-105 transition-transform" href="#campaigns">Campaigns</a>
+      <a class="text-on-surface-variant/80 hover:text-primary transition-colors duration-300 font-label-sm text-label-sm hover:scale-105 transition-transform" href="#philosophy">Philosophy</a>
+      <a class="text-on-surface-variant/80 hover:text-primary transition-colors duration-300 font-label-sm text-label-sm hover:scale-105 transition-transform" href="#contact">Contact</a>
+    </nav>
+    <button class="bg-primary text-on-primary px-6 py-1.5 rounded-full font-label-sm text-label-sm uppercase tracking-tighter hover:scale-105 transition-all duration-300 glow-pink">Connect</button>
+  </header>
+
+  <main class="relative z-10">
+    <!-- Home Section -->
+    <section class="min-h-screen pt-32 px-container-padding flex flex-col md:flex-row relative overflow-hidden bg-center bg-cover bg-no-repeat" id="home" style="background-image: linear-gradient(to right, rgba(10, 18, 40, 0.9) 0%, rgba(10, 18, 40, 0.4) 50%, rgba(10, 18, 40, 0.8) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuBeTvKb7DmOco8v6vHrIsOMLFWU9J15Biqx9sUfbEoifsfYDxBtrmlCyPd9pZyoIJlAjVaQ2fv_1MHTY_AMTDAkoRZic1yB45wyd_f1b41iMHNcbXmH_swA_K3EXjc13DMPr3MgI2TzQ3JKSPHuHWDx2MiXcz76mRI9kaHBAgcprvC4vl7Gqgmmg_n-JdWGWpGPJEJrWxUeTTQSN8svnPtGIReHo16xqSw267MK9wTFwvHmKzCwlIao-MQnduO0_LA27E0WhL7q3oM'); background-blend-mode: multiply; background-size: cover; background-position: center center; background-repeat: no-repeat;">
+      <div class="absolute inset-0 z-[-1]">
+        <div class="absolute inset-0 bg-radial-gradient from-transparent via-background/40 to-background opacity-80"></div>
+      </div>
+      
+      <div class="w-full md:w-3/5 flex flex-col justify-center z-10">
+        <h1 class="font-headline-lg text-headline-lg text-primary text-glow mb-2">Leah Dong</h1>
+        <h2 class="font-headline-md text-headline-md text-on-surface mb-6 italic opacity-80 leading-tight">Overseas Social Media & Content Operator</h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-12 border-l-2 border-primary/30 pl-6">Skilled at turning product features into localized content, with experience in content strategy, social media operations, KOL marketing, PR campaigns, and exhibition planning to drive exposure, engagement, and sales growth.</p>
         
-        .radar-shape {
-            clip-path: polygon(50% 10%, 90% 40%, 75% 90%, 25% 90%, 10% 40%);
-            background: radial-gradient(circle, rgba(237,188,208,0.3) 0%, rgba(237,188,208,0) 70%);
-        }
-    </style>
-<div class="grain-overlay"></div>
-<header class="rounded-full mt-6 mx-auto w-[90%] max-w-4xl fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur-lg border border-white/20 shadow-xl flex justify-between items-center px-8 py-3">
-<div class="font-headline-sm text-primary italic tracking-widest"><br></div>
-<nav class="hidden md:flex gap-8"><a class="text-on-surface-variant/80 hover:text-primary transition-colors duration-300 font-label-sm text-label-sm hover:scale-105 transition-transform font-bold border-b-2 border-primary/50 pb-1" href="#home" data-stitch-orig-opacity="0">Portfolio</a>
-<a class="text-primary font-label-sm text-label-sm hover:scale-105 transition-transform duration-300 text-on-surface-variant/80" href="#home">Home</a>
-<a class="text-on-surface-variant/80 hover:text-primary transition-colors duration-300 font-label-sm text-label-sm hover:scale-105 transition-transform" href="#ops">Operations</a>
-<a class="text-on-surface-variant/80 hover:text-primary transition-colors duration-300 font-label-sm text-label-sm hover:scale-105 transition-transform" href="#campaigns">Campaigns</a>
-<a class="text-on-surface-variant/80 hover:text-primary transition-colors duration-300 font-label-sm text-label-sm hover:scale-105 transition-transform" href="#philosophy">Philosophy</a>
-<a class="text-on-surface-variant/80 hover:text-primary transition-colors duration-300 font-label-sm text-label-sm hover:scale-105 transition-transform" href="#contact">Contact</a>
-</nav>
-<button class="bg-primary text-on-primary px-6 py-1.5 rounded-full font-label-sm text-label-sm uppercase tracking-tighter hover:scale-105 transition-all duration-300 glow-pink">Connect</button>
-</header>
-<main class="relative z-10">
-<section class="min-h-screen pt-32 px-container-padding flex flex-col md:flex-row relative overflow-hidden bg-center bg-cover bg-no-repeat" id="home" style="background-image: linear-gradient(to right, rgba(10, 18, 40, 0.9) 0%, rgba(10, 18, 40, 0.4) 50%, rgba(10, 18, 40, 0.8) 100%), url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBeTvKb7DmOco8v6vHrIsOMLFWU9J15Biqx9sUfbEoifsfYDxBtrmlCyPd9pZyoIJlAjVaQ2fv_1MHTY_AMTDAkoRZic1yB45wyd_f1b41iMHNcbXmH_swA_K3EXjc13DMPr3MgI2TzQ3JKSPHuHWDx2MiXcz76mRI9kaHBAgcprvC4vl7Gqgmmg_n-JdWGWpGPJEJrWxUeTTQSN8svnPtGIReHo16xqSw267MK9wTFwvHmKzCwlIao-MQnduO0_LA27E0WhL7q3oM&quot;); background-blend-mode: multiply; background-size: cover; background-position: center center; background-repeat: no-repeat;">
-<div class="absolute inset-0 z-[-1]"><div class="absolute inset-0 bg-radial-gradient from-transparent via-background/40 to-background opacity-80"></div></div>
-<div class="w-full md:w-3/5 flex flex-col justify-center z-10">
-<h1 class="font-headline-lg text-headline-lg text-primary text-glow mb-2">Leah Dong</h1>
-<h2 class="font-headline-md text-headline-md text-on-surface mb-6 italic opacity-80 leading-tight">Overseas Social Media &amp; Content Operator</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-12 border-l-2 border-primary/30 pl-6">Skilled at turning product features into localized content, with experience in content strategy, social media operations, KOL marketing, PR campaigns, and exhibition planning to drive exposure, engagement, and sales growth.</p>
+        <div class="flex gap-gutter">
+          <button class="bg-primary text-on-primary px-10 py-4 rounded-full font-label-sm text-label-sm uppercase tracking-widest glow-pink hover:translate-y-[-2px] transition-all">View Portfolio</button>
+          <button class="border border-primary/30 text-primary px-10 py-4 rounded-full font-label-sm text-label-sm uppercase tracking-widest backdrop-blur-md hover:bg-primary/10 transition-all">Download Resume PDF</button>
+        </div>
+      </div>
 
+      <div class="w-full md:w-2/5 flex items-center justify-center relative mt-12 md:mt-0">
+        <!-- Polaroid Frame Container -->
+        <div class="relative z-10 transform rotate-3 hover:rotate-0 transition-transform duration-700 ease-in-out drop-shadow-[0_20px_50px_rgba(0,0,0,0.3)]">
+          <div class="bg-[#f9f4f4] p-4 pb-16 rounded-sm shadow-inner relative overflow-hidden">
+            <!-- Paper Texture Overlay -->
+            <div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');"></div>
+            <!-- Image Container -->
+            <div class="relative w-64 h-64 md:w-80 md:h-80 bg-surface-container-highest overflow-hidden">
+              <img alt="Alex Rivera Portrait" class="w-full h-full object-cover sepia-[0.2] contrast-[0.95]" src="C:\Users\10975\Desktop\4c0829d414dda896cdafecf181101ad0.jpg">
+              <!-- Film Grain Overlay -->
+              <div class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.08] pointer-events-none"></div>
+            </div>
+            <!-- Handwritten Caption -->
+            <div class="absolute bottom-4 left-0 right-0 text-center">
+              <span class="font-['Playfair_Display'] italic text-[#5a4d4d] text-lg opacity-80 tracking-wide"></span>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="absolute bottom-0 left-0 w-full glass-panel py-6 border-x-0">
+        <div class="ticker-scroll gap-24 items-center">
+          <span class="font-label-sm text-label-sm text-primary flex items-center gap-2"><span class="material-symbols-outlined text-sm">trending_up</span> TOTAL REACH: 10M+</span>
+          <span class="font-label-sm text-label-sm text-primary flex items-center gap-2"><span class="material-symbols-outlined text-sm">payments</span> SALES: $1M/MO</span>
+          <span class="font-label-sm text-label-sm text-primary flex items-center gap-2"><span class="material-symbols-outlined text-sm">rocket_launch</span> 500% ROI AVERAGE</span>
+          <span class="font-label-sm text-label-sm text-primary flex items-center gap-2"><span class="material-symbols-outlined text-sm">group</span> 250+ GLOBAL KOL PARTNERS</span>
+          <span class="font-label-sm text-label-sm text-primary flex items-center gap-2"><span class="material-symbols-outlined text-sm">trending_up</span> TOTAL REACH: 1M+</span>
+          <span class="font-label-sm text-label-sm text-primary flex items-center gap-2"><span class="material-symbols-outlined text-sm">payments</span> SALES: $2K/MO</span>
+          <span class="font-label-sm text-label-sm text-primary flex items-center gap-2"><span class="material-symbols-outlined text-sm">rocket_launch</span> 500% ROI AVERAGE</span>
+        </div>
+      </div>
 
-<p class=""></p>
-<div class="flex gap-gutter">
-<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-label-sm text-label-sm uppercase tracking-widest glow-pink hover:translate-y-[-2px] transition-all">View Portfolio</button>
-<button class="border border-primary/30 text-primary px-10 py-4 rounded-full font-label-sm text-label-sm uppercase tracking-widest backdrop-blur-md hover:bg-primary/10 transition-all">Download Resume PDF</button>
-</div>
-</div>
-<div class="w-full md:w-2/5 flex items-center justify-center relative mt-12 md:mt-0">
-<!-- Background Depth Bubbles -->
+      <!-- Starlights -->
+      <div class="starlight opacity-20" style="left: 21.7715%; top: 16.9058%; animation: 9.4172s ease-in-out 3.52578s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 24.0252%; top: 23.9842%; animation: 8.67733s ease-in-out 4.91s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 75.6373%; top: 38.8516%; animation: 7.18982s ease-in-out 2.32139s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 37.8687%; top: 21.8857%; animation: 9.72099s ease-in-out 1.34698s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 59.0218%; top: 37.0809%; animation: 7.04244s ease-in-out 0.828015s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 49.7852%; top: 75.128%; animation: 6.01536s ease-in-out 0.491937s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 89.1379%; top: 95.6154%; animation: 5.2082s ease-in-out 2.11093s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 51.9674%; top: 71.0671%; animation: 8.11579s ease-in-out 4.33269s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 33.5847%; top: 88.3001%; animation: 7.53437s ease-in-out 0.671056s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 2.58598%; top: 20.6979%; animation: 5.29226s ease-in-out 0.955728s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 23.8444%; top: 14.9144%; animation: 7.02614s ease-in-out 0.0460647s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 47.2413%; top: 33.6044%; animation: 8.40835s ease-in-out 3.4755s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 70.6522%; top: 59.4261%; animation: 8.53782s ease-in-out 0.871616s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 95.2028%; top: 53.3262%; animation: 9.50219s ease-in-out 0.94567s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 27.7159%; top: 77.3018%; animation: 5.0579s ease-in-out 0.502399s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 33.7948%; top: 83.004%; animation: 6.84535s ease-in-out 0.783697s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 66.3608%; top: 3.5615%; animation: 5.76822s ease-in-out 4.12355s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 31.2367%; top: 87.9143%; animation: 8.65944s ease-in-out 0.262734s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 16.2441%; top: 22.0785%; animation: 5.35308s ease-in-out 1.25529s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 28.4374%; top: 8.52499%; animation: 5.42911s ease-in-out 3.04625s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 5.36078%; top: 53.3394%; animation: 6.04634s ease-in-out 3.1021s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 73.5706%; top: 9.81066%; animation: 6.47017s ease-in-out 2.59343s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 24.8822%; top: 2.40377%; animation: 7.0899s ease-in-out 3.56901s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 73.1162%; top: 52.3996%; animation: 6.15757s ease-in-out 1.01997s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 61.6941%; top: 78.6868%; animation: 8.1102s ease-in-out 2.65361s infinite normal none running float;"></div>
+    </section>
 
+    <!-- Operations Section -->
+    <section class="py-32 px-container-padding" id="ops">
+      <div class="flex flex-col mb-16">
+        <span class="font-label-sm text-label-sm text-primary uppercase tracking-[0.3em] mb-4">Operations</span>
+        <h2 class="font-headline-lg text-headline-lg text-on-surface">Daily Operations System</h2>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+        <!-- Card 1 -->
+        <a class="glass-panel rounded-[2rem] p-unit overflow-hidden group hover:border-primary/40 transition-all duration-500 block" href="{{DATA:SCREEN:content_factory_detail}}">
+          <div class="relative h-64 overflow-hidden rounded-t-[1.5rem]">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A collage of floating soap bubbles and sparkling stars over a misty, textured background reflecting a serene dreamscape with soft pink and blue hues. The aesthetic is surrealist digital art with high-blur focus and film grain." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbLfBU5NatMKlW3pgAHofJUKecaGmbjzx7KAML23z3kK_Dy-qBXWgPJGTd7LMN7f0vv8tUkI5PF6SRcgCENLgHLotyKw4NFoGWuc55JG4gsB9LI5o6uVmxslpnISiTDrBv2syHbN71HNXt_PGsfEBY1V743s7Cp5NKF7kLFFBquj2rPwixVYNJeTLxdV5sM3VC3MHo-1gbka0URaGtnbhDVogPjbF8vKIXEO3I-HA5n48h3kMty6gfOn6-6iFqPwJiU77c8BwmwSk">
+            <div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+          </div>
+          <div class="p-8">
+            <h3 class="font-headline-sm text-headline-sm text-primary mb-4">Content Factory</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-6">High-frequency short-video & PR content production. AIGC creative generation and comparison models for content optimization.</p>
+            <div class="flex flex-wrap gap-2 mb-8">
+              <span class="font-label-sm text-[10px] px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary">ORIGINAL VIDEOS</span>
+              <span class="font-label-sm text-[10px] px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary">AIGC WORKFLOW</span>
+            </div>
+            <div class="flex items-center gap-2 text-primary font-label-sm text-label-sm group-hover:translate-x-2 transition-transform">
+              <span class="">VIEW DETAILS</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </div>
+          </div>
+        </a>
 
-<!-- Polaroid Frame Container -->
-<div class="relative z-10 transform rotate-3 hover:rotate-0 transition-transform duration-700 ease-in-out drop-shadow-[0_20px_50px_rgba(0,0,0,0.3)]">
-<div class="bg-[#f9f4f4] p-4 pb-16 rounded-sm shadow-inner relative overflow-hidden">
-<!-- Paper Texture Overlay -->
-<div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: url(&quot;https://www.transparenttextures.com/patterns/paper-fibers.png&quot;);"></div>
-<!-- Image Container -->
-<div class="relative w-64 h-64 md:w-80 md:h-80 bg-surface-container-highest overflow-hidden">
-<img alt="Alex Rivera Portrait" class="w-full h-full object-cover sepia-[0.2] contrast-[0.95]" src="C:\Users\10975\Desktop\4c0829d414dda896cdafecf181101ad0.jpg">
-<!-- Film Grain Overlay -->
-<div class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.08] pointer-events-none"></div>
-</div>
-<!-- Handwritten Caption -->
-<div class="absolute bottom-4 left-0 right-0 text-center">
-<span class="font-['Playfair_Display'] italic text-[#5a4d4d] text-lg opacity-80 tracking-wide"></span>
-</div>
-</div>
-</div>
-<!-- Foreground Depth Bubbles -->
+        <!-- Card 2 -->
+        <a class="glass-panel rounded-[2rem] p-unit overflow-hidden group hover:border-primary/40 transition-all duration-500 block" href="{{DATA:SCREEN:kol_growth_detail}}">
+          <div class="relative h-64 overflow-hidden rounded-t-[1.5rem]">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close-up of clear water surface with gentle circular ripples and several bright, glowing star-shaped lights floating on the surface. The scene is illuminated with a soft blue tint and ethereal rainbow lens flares." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOXcLtkIRRN1_nMm7h3eXzNMNPJNrl_SLKtcdjlXSwuFahWNrYuRXMdhKqHeJ0vHyZQxuokaYiFtfch6V6tiwvyopLPREVzXLtRHeRlcD60O6UzdAI3YlNt4njC-5HToOQxClUVdWs8WBzUH88CPAmg-FMv8jMaTZ6gOKEkpUUIUy3LT9r1-mP8RDGeJxgnrEs3BKq28rRRvydSbQJYR7UootpS5Uq_V2WrV56tO7pDYtpGF4fqsMbiCh5CJEev4JLbmUMY9IWQTE">
+            <div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+          </div>
+          <div class="p-8">
+            <h3 class="font-headline-sm text-headline-sm text-primary mb-4">Growth & KOL</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-6">Database of 250+ vetted European influencers. German-market focus with 15% conversion lift.</p>
+            <div class="flex flex-wrap gap-2 mb-8">
+              <span class="font-label-sm text-[10px] px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary">EU MARKET</span>
+              <span class="font-label-sm text-[10px] px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary">US MARKET</span>
+            </div>
+            <div class="flex items-center gap-2 text-primary font-label-sm text-label-sm group-hover:translate-x-2 transition-transform">
+              <span class="">VIEW DETAILS</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </div>
+          </div>
+        </a>
 
+        <!-- Card 3 -->
+        <a class="glass-panel rounded-[2rem] p-unit overflow-hidden group hover:border-primary/40 transition-all duration-500 block" href="{{DATA:SCREEN:workflow_tech_detail}}">
+          <div class="relative h-64 overflow-hidden rounded-t-[1.5rem]">
+            <img alt="Minimalist geometric star with trailing particles in a hazy night sky" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIpuP7U6nzQdAlBuSIopXVLZmGHXzrWXwMCWArg78tljWZuMpSCBQFCMOFinVFcjnBdm_UPycNfINvbEqFV78ZMTQsx79TjE31imqAVcWN-o8lBsaDt167qefyNHnxKKjdw5ce2QGLwo7DtkyN_PJ7WuWt3lLG_tmnjA0GrN-Gppu1bc6lvFv3r2fEbI40iKBFi4QJkC3ibYW4UjA7irxqxPalhRPExItEQBJvXZMgXQXknIdbBXb3t6dkrV38u2qHBMb19D3MjrM">
+            <div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+          </div>
+          <div class="p-8">
+            <h3 class="font-headline-sm text-headline-sm text-primary mb-4">Workflow Tech</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-6">Built internal SOP workflows and AI toolstack using Vibe coding plugins, improving operational efficiency by 40%.</p>
+            <div class="flex flex-wrap gap-2 mb-8">
+              <span class="font-label-sm text-[10px] px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary">40% BOOST</span>
+              <span class="font-label-sm text-[10px] px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary">TECH SOP</span>
+            </div>
+            <div class="flex items-center gap-2 text-primary font-label-sm text-label-sm group-hover:translate-x-2 transition-transform">
+              <span class="">VIEW DETAILS</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </div>
+          </div>
+        </a>
+      </div>
 
-</div>
-<div class="absolute bottom-0 left-0 w-full glass-panel py-6 border-x-0">
-<div class="ticker-scroll gap-24 items-center">
-<span class="font-label-sm text-label-sm text-primary flex items-center gap-2"><span class="material-symbols-outlined text-sm">trending_up</span> TOTAL REACH: 10M+</span>
-<span class="font-label-sm text-label-sm text-primary flex items-center gap-2"><span class="material-symbols-outlined text-sm">payments</span> SALES: $1M/MO</span>
-<span class="font-label-sm text-label-sm text-primary flex items-center gap-2"><span class="material-symbols-outlined text-sm">rocket_launch</span> 500% ROI AVERAGE</span>
-<span class="font-label-sm text-label-sm text-primary flex items-center gap-2"><span class="material-symbols-outlined text-sm">group</span> 250+ GLOBAL KOL PARTNERS</span>
-<span class="font-label-sm text-label-sm text-primary flex items-center gap-2"><span class="material-symbols-outlined text-sm">trending_up</span> TOTAL REACH: 1M+</span>
-<span class="font-label-sm text-label-sm text-primary flex items-center gap-2"><span class="material-symbols-outlined text-sm">payments</span> SALES: $2K/MO</span>
-<span class="font-label-sm text-label-sm text-primary flex items-center gap-2"><span class="material-symbols-outlined text-sm">rocket_launch</span> 500% ROI AVERAGE</span>
-</div>
-</div>
-<div class="starlight opacity-20" style="left: 21.7715%; top: 16.9058%; animation: 9.4172s ease-in-out 3.52578s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 24.0252%; top: 23.9842%; animation: 8.67733s ease-in-out 4.91s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 75.6373%; top: 38.8516%; animation: 7.18982s ease-in-out 2.32139s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 37.8687%; top: 21.8857%; animation: 9.72099s ease-in-out 1.34698s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 59.0218%; top: 37.0809%; animation: 7.04244s ease-in-out 0.828015s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 49.7852%; top: 75.128%; animation: 6.01536s ease-in-out 0.491937s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 89.1379%; top: 95.6154%; animation: 5.2082s ease-in-out 2.11093s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 51.9674%; top: 71.0671%; animation: 8.11579s ease-in-out 4.33269s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 33.5847%; top: 88.3001%; animation: 7.53437s ease-in-out 0.671056s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 2.58598%; top: 20.6979%; animation: 5.29226s ease-in-out 0.955728s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 23.8444%; top: 14.9144%; animation: 7.02614s ease-in-out 0.0460647s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 47.2413%; top: 33.6044%; animation: 8.40835s ease-in-out 3.4755s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 70.6522%; top: 59.4261%; animation: 8.53782s ease-in-out 0.871616s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 95.2028%; top: 53.3262%; animation: 9.50219s ease-in-out 0.94567s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 27.7159%; top: 77.3018%; animation: 5.0579s ease-in-out 0.502399s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 33.7948%; top: 83.004%; animation: 6.84535s ease-in-out 0.783697s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 66.3608%; top: 3.5615%; animation: 5.76822s ease-in-out 4.12355s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 31.2367%; top: 87.9143%; animation: 8.65944s ease-in-out 0.262734s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 16.2441%; top: 22.0785%; animation: 5.35308s ease-in-out 1.25529s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 28.4374%; top: 8.52499%; animation: 5.42911s ease-in-out 3.04625s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 5.36078%; top: 53.3394%; animation: 6.04634s ease-in-out 3.1021s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 73.5706%; top: 9.81066%; animation: 6.47017s ease-in-out 2.59343s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 24.8822%; top: 2.40377%; animation: 7.0899s ease-in-out 3.56901s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 73.1162%; top: 52.3996%; animation: 6.15757s ease-in-out 1.01997s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 61.6941%; top: 78.6868%; animation: 8.1102s ease-in-out 2.65361s infinite normal none running float;"></div></section>
-<section class="py-32 px-container-padding" id="ops">
-<div class="flex flex-col mb-16">
-<span class="font-label-sm text-label-sm text-primary uppercase tracking-[0.3em] mb-4">Operations</span>
-<h2 class="font-headline-lg text-headline-lg text-on-surface">Daily Operations System</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-<a class="glass-panel rounded-[2rem] p-unit overflow-hidden group hover:border-primary/40 transition-all duration-500 block" href="{{DATA:SCREEN:content_factory_detail}}">
-<div class="relative h-64 overflow-hidden rounded-t-[1.5rem]">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A collage of floating soap bubbles and sparkling stars over a misty, textured background reflecting a serene dreamscape with soft pink and blue hues. The aesthetic is surrealist digital art with high-blur focus and film grain." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbLfBU5NatMKlW3pgAHofJUKecaGmbjzx7KAML23z3kK_Dy-qBXWgPJGTd7LMN7f0vv8tUkI5PF6SRcgCENLgHLotyKw4NFoGWuc55JG4gsB9LI5o6uVmxslpnISiTDrBv2syHbN71HNXt_PGsfEBY1V743s7Cp5NKF7kLFFBquj2rPwixVYNJeTLxdV5sM3VC3MHo-1gbka0URaGtnbhDVogPjbF8vKIXEO3I-HA5n48h3kMty6gfOn6-6iFqPwJiU77c8BwmwSk">
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
-</div>
-<div class="p-8">
-<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Content Factory</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-6">High-frequency short-video &amp; PR content production. AIGC creative generation and comparison models for content optimization.</p>
-<div class="flex flex-wrap gap-2 mb-8">
-<span class="font-label-sm text-[10px] px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary">ORIGINAL VIDEOS</span>
-<span class="font-label-sm text-[10px] px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary">AIGC WORKFLOW</span>
-</div>
-<div class="flex items-center gap-2 text-primary font-label-sm text-label-sm group-hover:translate-x-2 transition-transform">
-<span class="">VIEW DETAILS</span>
-<span class="material-symbols-outlined text-sm">arrow_forward</span>
-</div>
-</div>
-</a>
-<a class="glass-panel rounded-[2rem] p-unit overflow-hidden group hover:border-primary/40 transition-all duration-500 block" href="{{DATA:SCREEN:kol_growth_detail}}">
-<div class="relative h-64 overflow-hidden rounded-t-[1.5rem]">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close-up of clear water surface with gentle circular ripples and several bright, glowing star-shaped lights floating on the surface. The scene is illuminated with a soft blue tint and ethereal rainbow lens flares." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOXcLtkIRRN1_nMm7h3eXzNMNPJNrl_SLKtcdjlXSwuFahWNrYuRXMdhKqHeJ0vHyZQxuokaYiFtfch6V6tiwvyopLPREVzXLtRHeRlcD60O6UzdAI3YlNt4njC-5HToOQxClUVdWs8WBzUH88CPAmg-FMv8jMaTZ6gOKEkpUUIUy3LT9r1-mP8RDGeJxgnrEs3BKq28rRRvydSbQJYR7UootpS5Uq_V2WrV56tO7pDYtpGF4fqsMbiCh5CJEev4JLbmUMY9IWQTE">
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
-</div>
-<div class="p-8">
-<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Growth &amp; KOL</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-6">Database of 250+ vetted European influencers. German-market focus with 15% conversion lift.</p>
-<div class="flex flex-wrap gap-2 mb-8">
-<span class="font-label-sm text-[10px] px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary">EU MARKET</span>
-<span class="font-label-sm text-[10px] px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary">US MARKET</span>
-</div>
-<div class="flex items-center gap-2 text-primary font-label-sm text-label-sm group-hover:translate-x-2 transition-transform">
-<span class="">VIEW DETAILS</span>
-<span class="material-symbols-outlined text-sm">arrow_forward</span>
-</div>
-</div>
-</a>
-<a class="glass-panel rounded-[2rem] p-unit overflow-hidden group hover:border-primary/40 transition-all duration-500 block" href="{{DATA:SCREEN:workflow_tech_detail}}">
-<div class="relative h-64 overflow-hidden rounded-t-[1.5rem]">
-<img alt="Minimalist geometric star with trailing particles in a hazy night sky" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIpuP7U6nzQdAlBuSIopXVLZmGHXzrWXwMCWArg78tljWZuMpSCBQFCMOFinVFcjnBdm_UPycNfINvbEqFV78ZMTQsx79TjE31imqAVcWN-o8lBsaDt167qefyNHnxKKjdw5ce2QGLwo7DtkyN_PJ7WuWt3lLG_tmnjA0GrN-Gppu1bc6lvFv3r2fEbI40iKBFi4QJkC3ibYW4UjA7irxqxPalhRPExItEQBJvXZMgXQXknIdbBXb3t6dkrV38u2qHBMb19D3MjrM">
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
-</div>
-<div class="p-8">
-<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Workflow Tech</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-6">Built internal SOP workflows and AI toolstack using Vibe coding plugins, improving operational efficiency by 40%.</p>
-<div class="flex flex-wrap gap-2 mb-8">
-<span class="font-label-sm text-[10px] px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary">40% BOOST</span>
-<span class="font-label-sm text-[10px] px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary">TECH SOP</span>
-</div>
-<div class="flex items-center gap-2 text-primary font-label-sm text-label-sm group-hover:translate-x-2 transition-transform">
-<span class="">VIEW DETAILS</span>
-<span class="material-symbols-outlined text-sm">arrow_forward</span>
-</div>
-</div>
-</a>
-</div>
-<div class="starlight opacity-20" style="left: 35.6109%; top: 47.439%; animation: 7.40893s ease-in-out 1.91812s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 13.5002%; top: 77.252%; animation: 6.37417s ease-in-out 1.29923s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 86.9996%; top: 7.28946%; animation: 7.58079s ease-in-out 2.12262s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 76.3239%; top: 99.1584%; animation: 6.70377s ease-in-out 0.947133s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 43.1016%; top: 12.8228%; animation: 7.82814s ease-in-out 1.04854s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 82.7498%; top: 65.1673%; animation: 6.86356s ease-in-out 0.215507s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 0.658301%; top: 79.0354%; animation: 7.56114s ease-in-out 4.08929s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 19.8232%; top: 61.4212%; animation: 8.36059s ease-in-out 2.57608s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 75.1524%; top: 71.2037%; animation: 5.28085s ease-in-out 3.40528s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 63.5358%; top: 16.4363%; animation: 7.64534s ease-in-out 3.29066s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 5.2344%; top: 8.77893%; animation: 8.7631s ease-in-out 3.88664s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 26.1543%; top: 39.7645%; animation: 8.77755s ease-in-out 3.20986s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 68.266%; top: 40.5528%; animation: 7.68969s ease-in-out 2.8436s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 66.8998%; top: 82.081%; animation: 8.02604s ease-in-out 3.83875s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 95.1999%; top: 6.08905%; animation: 6.62171s ease-in-out 4.6056s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 31.0723%; top: 23.7143%; animation: 7.3192s ease-in-out 0.950514s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 63.0589%; top: 72.8677%; animation: 9.59049s ease-in-out 3.917s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 97.4042%; top: 47.5381%; animation: 7.93209s ease-in-out 1.00893s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 55.7458%; top: 65.3869%; animation: 7.37772s ease-in-out 3.39415s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 22.7687%; top: 81.9251%; animation: 7.59723s ease-in-out 3.66346s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 99.2381%; top: 58.1993%; animation: 5.65478s ease-in-out 3.03671s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 35.9312%; top: 98.996%; animation: 6.11865s ease-in-out 0.912431s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 0.560295%; top: 86.4294%; animation: 8.54013s ease-in-out 3.4719s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 53.6888%; top: 5.34317%; animation: 9.15406s ease-in-out 3.51031s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 87.4931%; top: 64.6373%; animation: 8.05442s ease-in-out 4.63965s infinite normal none running float;"></div></section>
-<section class="py-32 bg-surface-container-lowest/30 relative overflow-hidden" id="campaigns">
-<div class="meteor-container" id="campaigns-meteor-shower"><div class="meteor" style="left: 21.0866%; top: 35.7258%; animation: 5.2784s linear 0s 1 normal forwards running meteor-travel; box-shadow: rgb(255, 255, 255) 0px 0px 10px 2px, rgb(237, 188, 208) 0px 0px 20px 4px;"></div><div class="meteor" style="left: 23.631%; top: 42.853%; animation: 2.25471s linear 0s 1 normal forwards running meteor-travel; box-shadow: rgb(255, 255, 255) 0px 0px 10px 2px, rgb(237, 188, 208) 0px 0px 20px 4px;"></div><div class="meteor" style="left: 48.6239%; top: 36%; animation: 4.31441s linear 0s 1 normal forwards running meteor-travel; box-shadow: rgb(255, 255, 255) 0px 0px 10px 2px, rgb(237, 188, 208) 0px 0px 20px 4px;"></div><div class="meteor" style="left: 55.4378%; top: 22.4247%; animation: 5.36403s linear 0s 1 normal forwards running meteor-travel; box-shadow: rgb(255, 255, 255) 0px 0px 10px 2px, rgb(237, 188, 208) 0px 0px 20px 4px;"></div><div class="meteor" style="left: 73.108%; top: 2.86195%; animation: 3.71658s linear 0s 1 normal forwards running meteor-travel; box-shadow: rgb(255, 255, 255) 0px 0px 10px 2px, rgb(237, 188, 208) 0px 0px 20px 4px;"></div><div class="meteor" style="left: 75.322%; top: 24.91%; animation: 4.87969s linear 0s 1 normal forwards running meteor-travel; box-shadow: rgb(255, 255, 255) 0px 0px 10px 2px, rgb(237, 188, 208) 0px 0px 20px 4px;"></div></div>
-<div class="relative z-10 px-container-padding flex flex-col mb-24">
-<span class="font-label-sm text-label-sm text-primary uppercase tracking-[0.3em] mb-4">Case Studies</span>
-<h2 class="font-headline-lg text-headline-lg text-on-surface">Milestone Campaigns</h2>
-</div>
-<div class="relative z-10 flex flex-col">
-<div class="flex flex-col md:flex-row min-h-[60vh] border-y border-white/5">
-<div class="w-full md:w-1/2 p-margin-safe md:p-24 flex flex-col justify-center">
-<span class="font-label-sm text-label-sm text-primary-container mb-4">CAMPAIGN 01</span>
-<h3 class="font-headline-md text-headline-md text-primary mb-8">GTM Global Launch</h3>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Defining the brand's visual dialect for North American entry. We shifted from generic tech-minimalism to 'Warm Retro-Future' to stand out in the saturated consumer electronics space.</p>
-<ul class="space-y-4">
-<li class="flex items-center gap-4 text-on-surface"><span class="material-symbols-outlined text-primary" style="font-variation-settings: &quot;FILL&quot; 1;">auto_awesome</span> Strategy vs. High-Fidelity Visuals</li>
-<li class="flex items-center gap-4 text-on-surface"><span class="material-symbols-outlined text-primary" style="font-variation-settings: &quot;FILL&quot; 1;">auto_awesome</span> 2.5M Impression Organic Push</li>
-</ul>
-</div>
-<div class="w-full md:w-1/2 relative h-96 md:h-auto overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="Abstract white and light blue digital composition with explosive, sharp crystal-like formations and glowing light rays. The atmosphere is ethereal and high-contrast with soft hazy overlays and film grain textures, suggesting energy and futuristic design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoKgLYS5yOiKwVOrGZSPyEEQ_JUul0FTFGEUpy0h9lgiWZycVsTz6Si2Dlga9WEdaxLmpNJTcGUbailIZ6DFxJWzWfvi8Jo9gbL8G31zkrJs2AIW3wu4jJNtxuoia0IqOsI0qOSY2q_ChOclk1DSzIdla6cRe-cf0RFBEZEbgFRbCp6lLiboGi-NJVqr3D3UH5rpZcyvKm3Lyns6mz6tBpMuGYtWN0wInQfKfd3JRTh4z5ST8U-cX1R44zQ4UpL2ojh0KGY3Xh96U">
-</div>
-</div>
-<div class="flex flex-col md:flex-row-reverse min-h-[60vh] border-b border-white/5">
-<div class="w-full md:w-1/2 p-margin-safe md:p-24 flex flex-col justify-center">
-<span class="font-label-sm text-label-sm text-primary-container mb-4">CAMPAIGN 02</span>
-<h3 class="font-headline-md text-headline-md text-primary mb-8">Black Friday 2023</h3>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">A multi-layered social funnel strategy that converted interest into urgency. Orchestrated 40 simultaneous influencer launches across 4 time zones.</p>
-<ul class="space-y-4">
-<li class="flex items-center gap-4 text-on-surface"><span class="material-symbols-outlined text-primary" style="font-variation-settings: &quot;FILL&quot; 1;">auto_awesome</span> Growth Charts: +340% YoY</li>
-<li class="flex items-center gap-4 text-on-surface"><span class="material-symbols-outlined text-primary" style="font-variation-settings: &quot;FILL&quot; 1;">auto_awesome</span> 48-Hour Asset Prep Loop</li>
-</ul>
-</div>
-<div class="w-full md:w-1/2 relative h-96 md:h-auto overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="A clean blue background featuring a white geometric starburst diagram with many radiating lines of varying lengths, some containing small perpendicular ticks like data measurements. The design is minimalist, cosmic, and technical in style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCadOpYkeCqrI1DPkxDBlzGt7UaPGAR4JyRmCCKYR4RO4qFRQ1wxKpG_6yBl68Q2ikfQuTJ_cdKRpyw1IBqz6GX0lxBE7-bUY_gp6RIOAt7Zya1hVHR1XkyeQguRO3qsHjFnFpZu5dydJc20h-coXZjprSbu7gpCCWkPfOpbliBCWNtF10LoJSdo_JjUmCGxurgzEjOUrfE3gm3YWRr2zpqgMwPjkGNA4zcWvxap2fPmDAEdOr9IYqZVhYhM28sp12IA6rjFGug70c">
-</div>
-</div>
-<div class="flex flex-col md:flex-row min-h-[60vh] border-b border-white/5">
-<div class="w-full md:w-1/2 p-margin-safe md:p-24 flex flex-col justify-center">
-<span class="font-label-sm text-label-sm text-primary-container mb-4">CAMPAIGN 03</span>
-<h3 class="font-headline-md text-headline-md text-primary mb-8">IFA International Trade Fair</h3>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Demonstrating offline-to-online synergy. Focus on on-site social media leverage, field video strategy, and PR press release marketing (showcasing mainstream media inclusion).</p>
-<ul class="space-y-4">
-<li class="flex items-center gap-4 text-on-surface"><span class="material-symbols-outlined text-primary" style="font-variation-settings: &quot;FILL&quot; 1;">auto_awesome</span> Offline-to-Online Synergy</li>
-<li class="flex items-center gap-4 text-on-surface"><span class="material-symbols-outlined text-primary" style="font-variation-settings: &quot;FILL&quot; 1;">auto_awesome</span> PR &amp; Media Amplification</li>
-</ul>
-</div>
-<div class="w-full md:w-1/2 relative h-96 md:h-auto overflow-hidden">
-<img alt="A cinematic, high-fidelity collage of a tech trade fair with neon displays and digital news overlays" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATT5vaudud64dhPVfaVtplUSMqX82kR_f3FPNcTQf4TtIJ-iUShQTy7zG_eF_7X1A62wXL1CQxr78TFEpGg62cqBqCu5Z7PTGx5N6dBJ5v7PwHD0zXH1cA7XKumEYPFGmlwFq6k33FD_atMBGn0SH8zC1lx4mM8zsMcwsasAfcR1wa9PoocJcMPLNptwZwxJb0oA-0_aVVz9wlwe5ZXOEzgPFF_1G7ZWDSMibQ8KqbF_cVuvG8hK2sdcB5QLIwfe7wNH5iaTFdqJM">
-</div>
-</div></div>
-<div class="starlight opacity-20" style="left: 11.654%; top: 58.2047%; animation: 7.14364s ease-in-out 2.0032s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 64.2163%; top: 28.6923%; animation: 5.138s ease-in-out 1.93781s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 94.5114%; top: 1.304%; animation: 8.64053s ease-in-out 2.17543s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 42.8192%; top: 21.2835%; animation: 6.05972s ease-in-out 2.32314s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 24.4498%; top: 54.6373%; animation: 7.19043s ease-in-out 2.54895s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 80.5129%; top: 99.5784%; animation: 9.18869s ease-in-out 2.41481s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 60.6154%; top: 80.9478%; animation: 7.25663s ease-in-out 2.77844s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 5.95802%; top: 43.5243%; animation: 6.35147s ease-in-out 1.94529s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 51.6692%; top: 2.36031%; animation: 6.24351s ease-in-out 0.227142s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 32.5162%; top: 13.1134%; animation: 6.71637s ease-in-out 2.29652s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 92.8752%; top: 34.3064%; animation: 5.70671s ease-in-out 3.30304s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 93.4081%; top: 5.40891%; animation: 6.65391s ease-in-out 2.69645s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 83.1556%; top: 1.2258%; animation: 9.0034s ease-in-out 2.51417s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 37.3601%; top: 46.3393%; animation: 6.90645s ease-in-out 0.909454s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 50.6154%; top: 4.91083%; animation: 8.75975s ease-in-out 0.219213s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 53.4498%; top: 55.4584%; animation: 5.30184s ease-in-out 3.96981s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 21.3062%; top: 25.9745%; animation: 9.26057s ease-in-out 3.66456s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 79.6188%; top: 45.5998%; animation: 6.72151s ease-in-out 2.8667s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 39.8641%; top: 68.8181%; animation: 5.5132s ease-in-out 1.49923s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 35.687%; top: 61.8428%; animation: 9.19971s ease-in-out 1.97351s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 59.7281%; top: 46.2424%; animation: 6.89845s ease-in-out 1.8833s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 51.3576%; top: 91.7516%; animation: 7.58451s ease-in-out 3.60149s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 36.8593%; top: 78.6612%; animation: 6.711s ease-in-out 1.35595s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 25.2941%; top: 16.4688%; animation: 9.82138s ease-in-out 3.28075s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 13.0763%; top: 12.6794%; animation: 8.89535s ease-in-out 2.91962s infinite normal none running float;"></div></section>
-<section class="h-screen flex flex-col items-center justify-center text-center px-container-padding relative overflow-hidden" id="philosophy">
-<div class="absolute inset-0 z-[-1]">
-<img class="w-full h-full object-cover opacity-20" data-alt="Digital glitch art representing a hazy, white dreamscape with obscured vertical code-like characters forming a misty, atmospheric texture. The color palette is near-monochrome with soft grays and bright whites, evoking a digital afterlife or ethereal data stream." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzNNdimWXvSmW3_bgTs2d2Oyx5m7n7U_P4KaZwAtJtN14Lad8_lvyaYzNaMgG-zTsgAbu4QjP65q7SIrCV4MxZklxT_SVbeFNYGZw6OGCToDPQnbT-bZ7T7Z2_GfBqONSGv1I30AJn2vyxAbus5AsFYyqtM3yyHFkYd3-VJzO8P5ZVvB22GlR7DPH-Sq-0The9i4XTHbfdcKezceDIkymYtT-UZuvZpFAj-9kQ2I-9FD1SjxdeRraZxufkSM1CM3n8zGsD3xbGoRc">
-</div>
-<div class="max-w-4xl glass-panel p-24 rounded-[4rem] relative">
-<h2 class="font-headline-lg text-headline-lg text-primary text-glow leading-relaxed italic mb-12">内容易逝，情绪永恒。</h2>
-<div class="h-px w-24 bg-primary/30 mx-auto mb-12"></div>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto italic">
-                    The aesthetics of tomorrow are built on the memories of yesterday. I create content that doesn't just sell, but resonates within the collective digital subconscious.
-                </p>
-<div class="starlight top-10 left-10"></div>
-<div class="starlight bottom-20 right-40"></div>
-<div class="starlight top-1/2 right-10"></div>
-</div>
-<div class="starlight opacity-20" style="left: 65.7631%; top: 61.6593%; animation: 7.92517s ease-in-out 3.1971s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 49.3249%; top: 98.5847%; animation: 6.3995s ease-in-out 3.4206s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 40.5847%; top: 42.1608%; animation: 6.44185s ease-in-out 4.50437s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 12.5702%; top: 44.1898%; animation: 9.99387s ease-in-out 0.19257s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 97.9599%; top: 75.9838%; animation: 5.07187s ease-in-out 0.926848s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 58.9021%; top: 5.01257%; animation: 7.56736s ease-in-out 3.88682s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 9.70456%; top: 80.8683%; animation: 6.36676s ease-in-out 2.80599s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 24.342%; top: 14.1157%; animation: 6.18611s ease-in-out 2.99915s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 60.5688%; top: 11.4718%; animation: 6.16051s ease-in-out 1.83424s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 49.3894%; top: 21.9644%; animation: 7.84473s ease-in-out 0.422062s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 20.7944%; top: 64.9771%; animation: 7.62326s ease-in-out 2.73502s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 25.0083%; top: 18.375%; animation: 8.2695s ease-in-out 1.85808s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 36.9278%; top: 34.9602%; animation: 7.93174s ease-in-out 1.74066s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 40.3456%; top: 83.7443%; animation: 7.02665s ease-in-out 1.99958s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 43.9509%; top: 28.2822%; animation: 8.87541s ease-in-out 2.56573s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 28.7048%; top: 76.176%; animation: 6.74465s ease-in-out 4.00753s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 83.4624%; top: 26.1299%; animation: 5.96966s ease-in-out 1.08123s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 71.5599%; top: 47.7448%; animation: 6.01272s ease-in-out 2.81604s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 63.8582%; top: 30.8395%; animation: 9.60302s ease-in-out 1.8677s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 7.20746%; top: 58.8519%; animation: 7.08879s ease-in-out 2.58578s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 79.8017%; top: 46.3099%; animation: 9.22236s ease-in-out 1.69344s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 71.7699%; top: 75.4415%; animation: 7.07175s ease-in-out 2.53866s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 66.0319%; top: 76.5631%; animation: 9.61876s ease-in-out 3.28239s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 21.651%; top: 74.0441%; animation: 6.52995s ease-in-out 2.71953s infinite normal none running float;"></div><div class="starlight opacity-20" style="left: 51.0167%; top: 20.5536%; animation: 9.48855s ease-in-out 1.19772s infinite normal none running float;"></div></section>
-</main>
-<footer class="w-full rounded-t-[3rem] mt-24 bg-surface-container-low/40 backdrop-blur-xl border-t border-white/10 shadow-[0_-10px_40px_rgba(237,188,208,0.1)] py-margin-safe relative z-20" id="contact">
-<div class="max-w-7xl mx-auto px-container-padding flex flex-col items-center gap-gutter">
-<div class="text-center mb-12">
-<h3 class="font-headline-md text-headline-md text-primary mb-4 drop-shadow-glow">Ready to build the next viral hit?</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Let's craft your brand's digital dreamscape together.</p>
-</div>
-<div class="flex flex-col md:flex-row gap-8 items-center justify-center mb-16">
-<a class="glass-panel px-8 py-4 rounded-full flex items-center gap-4 hover:border-primary/50 transition-all group" href="mailto:hello@etherstrat.com">
-<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">mail</span>
-<span class="font-label-sm text-label-sm text-on-surface">hello@etherstrat.com</span>
-</a>
-<a class="glass-panel px-8 py-4 rounded-full flex items-center gap-4 hover:border-primary/50 transition-all group" href="#">
-<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">share</span>
-<span class="font-label-sm text-label-sm text-on-surface">LinkedIn Profile</span>
-</a>
-<div class="glass-panel px-8 py-4 rounded-full flex items-center gap-4 hover:border-primary/50 transition-all group">
-<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">qr_code_2</span>
-<span class="font-label-sm text-label-sm text-on-surface">WeChat: Rivera_Ops</span>
-</div>
-</div>
-<div class="w-full flex flex-col md:flex-row justify-between items-center border-t border-white/5 pt-12">
-<div class="font-headline-md text-primary-container drop-shadow-glow mb-4 md:mb-0">ETHER</div>
-<div class="font-body-md text-body-md text-on-surface-variant opacity-60">
-                    © 2024 Ether Strategist. Crafted in the Millennium Dream.
-                </div>
-<div class="flex gap-8 mt-4 md:mt-0">
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary-container transition-all" href="#">Terms</a>
-<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary-container transition-all" href="#">Privacy</a>
-</div>
-</div>
-</div>
-</footer>
-<script>
+      <!-- Starlights -->
+      <div class="starlight opacity-20" style="left: 35.6109%; top: 47.439%; animation: 7.40893s ease-in-out 1.91812s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 13.5002%; top: 77.252%; animation: 6.37417s ease-in-out 1.29923s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 86.9996%; top: 7.28946%; animation: 7.58079s ease-in-out 2.12262s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 76.3239%; top: 99.1584%; animation: 6.70377s ease-in-out 0.947133s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 43.1016%; top: 12.8228%; animation: 7.82814s ease-in-out 1.04854s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 82.7498%; top: 65.1673%; animation: 6.86356s ease-in-out 0.215507s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 0.658301%; top: 79.0354%; animation: 7.56114s ease-in-out 4.08929s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 19.8232%; top: 61.4212%; animation: 8.36059s ease-in-out 2.57608s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 75.1524%; top: 71.2037%; animation: 5.28085s ease-in-out 3.40528s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 63.5358%; top: 16.4363%; animation: 7.64534s ease-in-out 3.29066s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 5.2344%; top: 8.77893%; animation: 8.7631s ease-in-out 3.88664s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 26.1543%; top: 39.7645%; animation: 8.77755s ease-in-out 3.20986s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 68.266%; top: 40.5528%; animation: 7.68969s ease-in-out 2.8436s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 66.8998%; top: 82.081%; animation: 8.02604s ease-in-out 3.83875s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 95.1999%; top: 6.08905%; animation: 6.62171s ease-in-out 4.6056s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 31.0723%; top: 23.7143%; animation: 7.3192s ease-in-out 0.950514s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 63.0589%; top: 72.8677%; animation: 9.59049s ease-in-out 3.917s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 97.4042%; top: 47.5381%; animation: 7.93209s ease-in-out 1.00893s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 55.7458%; top: 65.3869%; animation: 7.37772s ease-in-out 3.39415s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 22.7687%; top: 81.9251%; animation: 7.59723s ease-in-out 3.66346s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 99.2381%; top: 58.1993%; animation: 5.65478s ease-in-out 3.03671s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 35.9312%; top: 98.996%; animation: 6.11865s ease-in-out 0.912431s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 0.560295%; top: 86.4294%; animation: 8.54013s ease-in-out 3.4719s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 53.6888%; top: 5.34317%; animation: 9.15406s ease-in-out 3.51031s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 87.4931%; top: 64.6373%; animation: 8.05442s ease-in-out 4.63965s infinite normal none running float;"></div>
+    </section>
+
+    <!-- Campaigns Section -->
+    <section class="py-32 bg-surface-container-lowest/30 relative overflow-hidden" id="campaigns">
+      <div class="meteor-container" id="campaigns-meteor-shower">
+        <div class="meteor" style="left: 21.0866%; top: 35.7258%; animation: 5.2784s linear 0s 1 normal forwards running meteor-travel; box-shadow: rgb(255, 255, 255) 0px 0px 10px 2px, rgb(237, 188, 208) 0px 0px 20px 4px;"></div>
+        <div class="meteor" style="left: 23.631%; top: 42.853%; animation: 2.25471s linear 0s 1 normal forwards running meteor-travel; box-shadow: rgb(255, 255, 255) 0px 0px 10px 2px, rgb(237, 188, 208) 0px 0px 20px 4px;"></div>
+        <div class="meteor" style="left: 48.6239%; top: 36%; animation: 4.31441s linear 0s 1 normal forwards running meteor-travel; box-shadow: rgb(255, 255, 255) 0px 0px 10px 2px, rgb(237, 188, 208) 0px 0px 20px 4px;"></div>
+        <div class="meteor" style="left: 55.4378%; top: 22.4247%; animation: 5.36403s linear 0s 1 normal forwards running meteor-travel; box-shadow: rgb(255, 255, 255) 0px 0px 10px 2px, rgb(237, 188, 208) 0px 0px 20px 4px;"></div>
+        <div class="meteor" style="left: 73.108%; top: 2.86195%; animation: 3.71658s linear 0s 1 normal forwards running meteor-travel; box-shadow: rgb(255, 255, 255) 0px 0px 10px 2px, rgb(237, 188, 208) 0px 0px 20px 4px;"></div>
+        <div class="meteor" style="left: 75.322%; top: 24.91%; animation: 4.87969s linear 0s 1 normal forwards running meteor-travel; box-shadow: rgb(255, 255, 255) 0px 0px 10px 2px, rgb(237, 188, 208) 0px 0px 20px 4px;"></div>
+      </div>
+
+      <div class="relative z-10 px-container-padding flex flex-col mb-24">
+        <span class="font-label-sm text-label-sm text-primary uppercase tracking-[0.3em] mb-4">Case Studies</span>
+        <h2 class="font-headline-lg text-headline-lg text-on-surface">Milestone Campaigns</h2>
+      </div>
+
+      <div class="relative z-10 flex flex-col">
+        <!-- Campaign 1 -->
+        <div class="flex flex-col md:flex-row min-h-[60vh] border-y border-white/5">
+          <div class="w-full md:w-1/2 p-margin-safe md:p-24 flex flex-col justify-center">
+            <span class="font-label-sm text-label-sm text-primary-container mb-4">CAMPAIGN 01</span>
+            <h3 class="font-headline-md text-headline-md text-primary mb-8">GTM Global Launch</h3>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Defining the brand's visual dialect for North American entry. We shifted from generic tech-minimalism to 'Warm Retro-Future' to stand out in the saturated consumer electronics space.</p>
+            <ul class="space-y-4">
+              <li class="flex items-center gap-4 text-on-surface"><span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span> Strategy vs. High-Fidelity Visuals</li>
+              <li class="flex items-center gap-4 text-on-surface"><span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span> 2.5M Impression Organic Push</li>
+            </ul>
+          </div>
+          <div class="w-full md:w-1/2 relative h-96 md:h-auto overflow-hidden">
+            <img class="w-full h-full object-cover" data-alt="Abstract white and light blue digital composition with explosive, sharp crystal-like formations and glowing light rays. The atmosphere is ethereal and high-contrast with soft hazy overlays and film grain textures, suggesting energy and futuristic design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoKgLYS5yOiKwVOrGZSPyEEQ_JUul0FTFGEUpy0h9lgiWZycVsTz6Si2Dlga9WEdaxLmpNJTcGUbailIZ6DFxJWzWfvi8Jo9gbL8G31zkrJs2AIW3wu4jJNtxuoia0IqOsI0qOSY2q_ChOclk1DSzIdla6cRe-cf0RFBEZEbgFRbCp6lLiboGi-NJVqr3D3UH5rpZcyvKm3Lyns6mz6tBpMuGYtWN0wInQfKfd3JRTh4z5ST8U-cX1R44zQ4UpL2ojh0KGY3Xh96U">
+          </div>
+        </div>
+
+        <!-- Campaign 2 -->
+        <div class="flex flex-col md:flex-row-reverse min-h-[60vh] border-b border-white/5">
+          <div class="w-full md:w-1/2 p-margin-safe md:p-24 flex flex-col justify-center">
+            <span class="font-label-sm text-label-sm text-primary-container mb-4">CAMPAIGN 02</span>
+            <h3 class="font-headline-md text-headline-md text-primary mb-8">Black Friday 2023</h3>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mb-8">A multi-layered social funnel strategy that converted interest into urgency. Orchestrated 40 simultaneous influencer launches across 4 time zones.</p>
+            <ul class="space-y-4">
+              <li class="flex items-center gap-4 text-on-surface"><span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span> Growth Charts: +340% YoY</li>
+              <li class="flex items-center gap-4 text-on-surface"><span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span> 48-Hour Asset Prep Loop</li>
+            </ul>
+          </div>
+          <div class="w-full md:w-1/2 relative h-96 md:h-auto overflow-hidden">
+            <img class="w-full h-full object-cover" data-alt="A clean blue background featuring a white geometric starburst diagram with many radiating lines of varying lengths, some containing small perpendicular ticks like data measurements. The design is minimalist, cosmic, and technical in style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCadOpYkeCqrI1DPkxDBlzGt7UaPGAR4JyRmCCKYR4RO4qFRQ1wxKpG_6yBl68Q2ikfQuTJ_cdKRpyw1IBqz6GX0lxBE7-bUY_gp6RIOAt7Zya1hVHR1XkyeQguRO3qsHjFnFpZu5dydJc20h-coXZjprSbu7gpCCWkPfOpbliBCWNtF10LoJSdo_JjUmCGxurgzEjOUrfE3gm3YWRr2zpqgMwPjkGNA4zcWvxap2fPmDAEdOr9IYqZVhYhM28sp12IA6rjFGug70c">
+          </div>
+        </div>
+
+        <!-- Campaign 3 -->
+        <div class="flex flex-col md:flex-row min-h-[60vh] border-b border-white/5">
+          <div class="w-full md:w-1/2 p-margin-safe md:p-24 flex flex-col justify-center">
+            <span class="font-label-sm text-label-sm text-primary-container mb-4">CAMPAIGN 03</span>
+            <h3 class="font-headline-md text-headline-md text-primary mb-8">IFA International Trade Fair</h3>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Demonstrating offline-to-online synergy. Focus on on-site social media leverage, field video strategy, and PR press release marketing (showcasing mainstream media inclusion).</p>
+            <ul class="space-y-4">
+              <li class="flex items-center gap-4 text-on-surface"><span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span> Offline-to-Online Synergy</li>
+              <li class="flex items-center gap-4 text-on-surface"><span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span> PR & Media Amplification</li>
+            </ul>
+          </div>
+          <div class="w-full md:w-1/2 relative h-96 md:h-auto overflow-hidden">
+            <img alt="A cinematic, high-fidelity collage of a tech trade fair with neon displays and digital news overlays" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATT5vaudud64dhPVfaVtplUSMqX82kR_f3FPNcTQf4TtIJ-iUShQTy7zG_eF_7X1A62wXL1CQxr78TFEpGg62cqBqCu5Z7PTGx5N6dBJ5v7PwHD0zXH1cA7XKumEYPFGmlwFq6k33FD_atMBGn0SH8zC1lx4mM8zsMcwsasAfcR1wa9PoocJcMPLNptwZwxJb0oA-0_aVVz9wlwe5ZXOEzgPFF_1G7ZWDSMibQ8KqbF_cVuvG8hK2sdcB5QLIwfe7wNH5iaTFdqJM">
+          </div>
+        </div>
+      </div>
+
+      <!-- Starlights -->
+      <div class="starlight opacity-20" style="left: 11.654%; top: 58.2047%; animation: 7.14364s ease-in-out 2.0032s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 64.2163%; top: 28.6923%; animation: 5.138s ease-in-out 1.93781s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 94.5114%; top: 1.304%; animation: 8.64053s ease-in-out 2.17543s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 42.8192%; top: 21.2835%; animation: 6.05972s ease-in-out 2.32314s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 24.4498%; top: 54.6373%; animation: 7.19043s ease-in-out 2.54895s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 80.5129%; top: 99.5784%; animation: 9.18869s ease-in-out 2.41481s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 60.6154%; top: 80.9478%; animation: 7.25663s ease-in-out 2.77844s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 5.95802%; top: 43.5243%; animation: 6.35147s ease-in-out 1.94529s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 51.6692%; top: 2.36031%; animation: 6.24351s ease-in-out 0.227142s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 32.5162%; top: 13.1134%; animation: 6.71637s ease-in-out 2.29652s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 92.8752%; top: 34.3064%; animation: 5.70671s ease-in-out 3.30304s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 93.4081%; top: 5.40891%; animation: 6.65391s ease-in-out 2.69645s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 83.1556%; top: 1.2258%; animation: 9.0034s ease-in-out 2.51417s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 37.3601%; top: 46.3393%; animation: 6.90645s ease-in-out 0.909454s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 50.6154%; top: 4.91083%; animation: 8.75975s ease-in-out 0.219213s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 53.4498%; top: 55.4584%; animation: 5.30184s ease-in-out 3.96981s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 21.3062%; top: 25.9745%; animation: 9.26057s ease-in-out 3.66456s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 79.6188%; top: 45.5998%; animation: 6.72151s ease-in-out 2.8667s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 39.8641%; top: 68.8181%; animation: 5.5132s ease-in-out 1.49923s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 35.687%; top: 61.8428%; animation: 9.19971s ease-in-out 1.97351s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 59.7281%; top: 46.2424%; animation: 6.89845s ease-in-out 1.8833s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 51.3576%; top: 91.7516%; animation: 7.58451s ease-in-out 3.60149s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 36.8593%; top: 78.6612%; animation: 6.711s ease-in-out 1.35595s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 25.2941%; top: 16.4688%; animation: 9.82138s ease-in-out 3.28075s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 13.0763%; top: 12.6794%; animation: 8.89535s ease-in-out 2.91962s infinite normal none running float;"></div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="h-screen flex flex-col items-center justify-center text-center px-container-padding relative overflow-hidden" id="philosophy">
+      <div class="absolute inset-0 z-[-1]">
+        <img class="w-full h-full object-cover opacity-20" data-alt="Digital glitch art representing a hazy, white dreamscape with obscured vertical code-like characters forming a misty, atmospheric texture. The color palette is near-monochrome with soft grays and bright whites, evoking a digital afterlife or ethereal data stream." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzNNdimWXvSmW3_bgTs2d2Oyx5m7n7U_P4KaZwAtJtN14Lad8_lvyaYzNaMgG-zTsgAbu4QjP65q7SIrCV4MxZklxT_SVbeFNYGZw6OGCToDPQnbT-bZ7T7Z2_GfBqONSGv1I30AJn2vyxAbus5AsFYyqtM3yyHFkYd3-VJzO8P5ZVvB22GlR7DPH-Sq-0The9i4XTHbfdcKezceDIkymYtT-UZuvZpFAj-9kQ2I-9FD1SjxdeRraZxufkSM1CM3n8zGsD3xbGoRc">
+      </div>
+      
+      <div class="max-w-4xl glass-panel p-24 rounded-[4rem] relative">
+        <h2 class="font-headline-lg text-headline-lg text-primary text-glow leading-relaxed italic mb-12">内容易逝，情绪永恒。</h2>
+        <div class="h-px w-24 bg-primary/30 mx-auto mb-12"></div>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto italic">
+          The aesthetics of tomorrow are built on the memories of yesterday. I create content that doesn't just sell, but resonates within the collective digital subconscious.
+        </p>
+        <div class="starlight top-10 left-10"></div>
+        <div class="starlight bottom-20 right-40"></div>
+        <div class="starlight top-1/2 right-10"></div>
+      </div>
+
+      <!-- Starlights -->
+      <div class="starlight opacity-20" style="left: 65.7631%; top: 61.6593%; animation: 7.92517s ease-in-out 3.1971s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 49.3249%; top: 98.5847%; animation: 6.3995s ease-in-out 3.4206s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 40.5847%; top: 42.1608%; animation: 6.44185s ease-in-out 4.50437s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 12.5702%; top: 44.1898%; animation: 9.99387s ease-in-out 0.19257s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 97.9599%; top: 75.9838%; animation: 5.07187s ease-in-out 0.926848s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 58.9021%; top: 5.01257%; animation: 7.56736s ease-in-out 3.88682s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 9.70456%; top: 80.8683%; animation: 6.36676s ease-in-out 2.80599s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 24.342%; top: 14.1157%; animation: 6.18611s ease-in-out 2.99915s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 60.5688%; top: 11.4718%; animation: 6.16051s ease-in-out 1.83424s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 49.3894%; top: 21.9644%; animation: 7.84473s ease-in-out 0.422062s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 20.7944%; top: 64.9771%; animation: 7.62326s ease-in-out 2.73502s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 25.0083%; top: 18.375%; animation: 8.2695s ease-in-out 1.85808s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 36.9278%; top: 34.9602%; animation: 7.93174s ease-in-out 1.74066s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 40.3456%; top: 83.7443%; animation: 7.02665s ease-in-out 1.99958s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 43.9509%; top: 28.2822%; animation: 8.87541s ease-in-out 2.56573s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 28.7048%; top: 76.176%; animation: 6.74465s ease-in-out 4.00753s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 83.4624%; top: 26.1299%; animation: 5.96966s ease-in-out 1.08123s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 71.5599%; top: 47.7448%; animation: 6.01272s ease-in-out 2.81604s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 63.8582%; top: 30.8395%; animation: 9.60302s ease-in-out 1.8677s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 7.20746%; top: 58.8519%; animation: 7.08879s ease-in-out 2.58578s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 79.8017%; top: 46.3099%; animation: 9.22236s ease-in-out 1.69344s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 71.7699%; top: 75.4415%; animation: 7.07175s ease-in-out 2.53866s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 66.0319%; top: 76.5631%; animation: 9.61876s ease-in-out 3.28239s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 21.651%; top: 74.0441%; animation: 6.52995s ease-in-out 2.71953s infinite normal none running float;"></div>
+      <div class="starlight opacity-20" style="left: 51.0167%; top: 20.5536%; animation: 9.48855s ease-in-out 1.19772s infinite normal none running float;"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full rounded-t-[3rem] mt-24 bg-surface-container-low/40 backdrop-blur-xl border-t border-white/10 shadow-[0_-10px_40px_rgba(237,188,208,0.1)] py-margin-safe relative z-20" id="contact">
+    <div class="max-w-7xl mx-auto px-container-padding flex flex-col items-center gap-gutter">
+      <div class="text-center mb-12">
+        <h3 class="font-headline-md text-headline-md text-primary mb-4 drop-shadow-glow">Ready to build the next viral hit?</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant">Let's craft your brand's digital dreamscape together.</p>
+      </div>
+
+      <div class="flex flex-col md:flex-row gap-8 items-center justify-center mb-16">
+        <a class="glass-panel px-8 py-4 rounded-full flex items-center gap-4 hover:border-primary/50 transition-all group" href="mailto:hello@etherstrat.com">
+          <span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">mail</span>
+          <span class="font-label-sm text-label-sm text-on-surface">hello@etherstrat.com</span>
+        </a>
+        <a class="glass-panel px-8 py-4 rounded-full flex items-center gap-4 hover:border-primary/50 transition-all group" href="#">
+          <span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">share</span>
+          <span class="font-label-sm text-label-sm text-on-surface">LinkedIn Profile</span>
+        </a>
+        <div class="glass-panel px-8 py-4 rounded-full flex items-center gap-4 hover:border-primary/50 transition-all group">
+          <span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">qr_code_2</span>
+          <span class="font-label-sm text-label-sm text-on-surface">WeChat: Rivera_Ops</span>
+        </div>
+      </div>
+
+      <div class="w-full flex flex-col md:flex-row justify-between items-center border-t border-white/5 pt-12">
+        <div class="font-headline-md text-primary-container drop-shadow-glow mb-4 md:mb-0">ETHER</div>
+        <div class="font-body-md text-body-md text-on-surface-variant opacity-60">
+          © 2024 Ether Strategist. Crafted in the Millennium Dream.
+        </div>
+        <div class="flex gap-8 mt-4 md:mt-0">
+          <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary-container transition-all" href="#">Terms</a>
+          <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary-container transition-all" href="#">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
     // Micro-interaction: Subtle starlight generation
     const allSections = document.querySelectorAll('section');
     allSections.forEach(section => {
@@ -504,15 +653,6 @@
             }
         });
     });
-</script>
-
-
-```
-
-
-
-
-
-
-
-</body></html>
+  </script>
+</body>
+</html>
